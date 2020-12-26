@@ -1,4 +1,4 @@
-module que2_moore(in_bit,clk,reset,out);
+module Moore110(in_bit,clk,reset,out);
 input clk,reset,in_bit;
 output reg out;
 parameter S0=0,S1=1,S2=2,S3=3;
