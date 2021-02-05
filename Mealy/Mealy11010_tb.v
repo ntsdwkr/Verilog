@@ -1,5 +1,4 @@
-`timescale 1s/100ms
-`include "Mealy11010.v"
+
 module SeqDet_tb;
     reg in_bit,clk,reset;
     wire out;
