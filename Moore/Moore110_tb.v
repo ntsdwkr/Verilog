@@ -1,5 +1,4 @@
-`timescale 1s/100ms
-`include "Moore110.v"
+
 module Moore110_tb;
     reg in_bit,clk,reset; 
     wire out;
@@ -8,8 +7,7 @@ module Moore110_tb;
 initial 
 begin
     $monitor("time = %0t || input = %0b || output = %0b", $time, in_bit, out);
-    $dumpfile("Moore110.vcd");
-    $dumpvars;
+   
         clk = 1'b0; 
         reset = 1'b1;  
         #15 reset = 1'b0;  
