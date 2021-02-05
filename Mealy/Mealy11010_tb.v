@@ -8,8 +8,6 @@ module SeqDet_tb;
 initial
 begin
     $monitor("time = %0t || input = %0b || output = %0b", $time, in_bit, out);
-    $dumpfile("Mealy11010.vcd");  
-    $dumpvars;
         clk = 1'b0;
         reset = 1'b1;
         #15 reset = 1'b0; 
